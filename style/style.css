@@ -1,0 +1,18 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+h1 {
+    color: rgb(229, 231, 235);
+}
+
+.options p {
+    color: rgb(210, 213, 219);
+}
+
+body {
+    background-color: rgb(18, 24, 39);
+}
