@@ -1,4 +1,4 @@
-const ALL_COUNTRIES_AND_TERRITORIES = {
+const ALL_COUNTRIES_AND_TERRITORIES_OBJECT = {
     "AD": "Andorra",
     "AE": "United Arab Emirates",
     "AF": "Afghanistan",
@@ -254,7 +254,261 @@ const ALL_COUNTRIES_AND_TERRITORIES = {
     "ZA": "South Africa",
     "ZM": "Zambia",
     "ZW": "Zimbabwe"
-}
+};
+const ALL_COUNTRIES_AND_TERRITORIES_ARRAY = [
+    "Andorra",
+    "United Arab Emirates",
+    "Afghanistan",
+    "Antigua and Barbuda",
+    "Anguilla",
+    "Albania",
+    "Armenia",
+    "Angola",
+    "Antarctica",
+    "Argentina",
+    "American Samoa",
+    "Austria",
+    "Australia",
+    "Aruba",
+    "Åland Islands",
+    "Azerbaijan",
+    "Bosnia and Herzegovina",
+    "Barbados",
+    "Bangladesh",
+    "Belgium",
+    "Burkina Faso",
+    "Bulgaria",
+    "Bahrain",
+    "Burundi",
+    "Benin",
+    "Saint Barthélemy",
+    "Bermuda",
+    "Brunei Darussalam",
+    "Bolivia, Plurinational State of",
+    "Caribbean Netherlands",
+    "Brazil",
+    "Bahamas",
+    "Bhutan",
+    "Bouvet Island",
+    "Botswana",
+    "Belarus",
+    "Belize",
+    "Canada",
+    "Cocos (Keeling) Islands",
+    "Congo, the Democratic Republic of the",
+    "Central African Republic",
+    "Republic of the Congo",
+    "Switzerland",
+    "Côte d'Ivoire",
+    "Cook Islands",
+    "Chile",
+    "Cameroon",
+    "China (People's Republic of China)",
+    "Colombia",
+    "Costa Rica",
+    "Cuba",
+    "Cape Verde",
+    "Curaçao",
+    "Christmas Island",
+    "Cyprus",
+    "Czech Republic",
+    "Germany",
+    "Djibouti",
+    "Denmark",
+    "Dominica",
+    "Dominican Republic",
+    "Algeria",
+    "Ecuador",
+    "Estonia",
+    "Egypt",
+    "Western Sahara",
+    "Eritrea",
+    "Spain",
+    "Ethiopia",
+    "Europe",
+    "Finland",
+    "Fiji",
+    "Falkland Islands (Malvinas)",
+    "Micronesia, Federated States of",
+    "Faroe Islands",
+    "France",
+    "Gabon",
+    "United Kingdom",
+    "Grenada",
+    "Georgia",
+    "French Guiana",
+    "Guernsey",
+    "Ghana",
+    "Gibraltar",
+    "Greenland",
+    "Gambia",
+    "Guinea",
+    "Guadeloupe",
+    "Equatorial Guinea",
+    "Greece",
+    "South Georgia and the South Sandwich Islands",
+    "Guatemala",
+    "Guam",
+    "Guinea-Bissau",
+    "Guyana",
+    "Hong Kong",
+    "Heard Island and McDonald Islands",
+    "Honduras",
+    "Croatia",
+    "Haiti",
+    "Hungary",
+    "Indonesia",
+    "Ireland",
+    "Israel",
+    "Isle of Man",
+    "India",
+    "British Indian Ocean Territory",
+    "Iraq",
+    "Iran, Islamic Republic of",
+    "Iceland",
+    "Italy",
+    "Jersey",
+    "Jamaica",
+    "Jordan",
+    "Japan",
+    "Kenya",
+    "Kyrgyzstan",
+    "Cambodia",
+    "Kiribati",
+    "Comoros",
+    "Saint Kitts and Nevis",
+    "Korea, Democratic People's Republic of",
+    "Korea, Republic of",
+    "Kuwait",
+    "Cayman Islands",
+    "Kazakhstan",
+    "Laos (Lao People's Democratic Republic)",
+    "Lebanon",
+    "Saint Lucia",
+    "Liechtenstein",
+    "Sri Lanka",
+    "Liberia",
+    "Lesotho",
+    "Lithuania",
+    "Luxembourg",
+    "Latvia",
+    "Libya",
+    "Morocco",
+    "Monaco",
+    "Moldova, Republic of",
+    "Montenegro",
+    "Saint Martin",
+    "Madagascar",
+    "Marshall Islands",
+    "North Macedonia",
+    "Mali",
+    "Myanmar",
+    "Mongolia",
+    "Macao",
+    "Northern Mariana Islands",
+    "Martinique",
+    "Mauritania",
+    "Montserrat",
+    "Malta",
+    "Mauritius",
+    "Maldives",
+    "Malawi",
+    "Mexico",
+    "Malaysia",
+    "Mozambique",
+    "Namibia",
+    "New Caledonia",
+    "Niger",
+    "Norfolk Island",
+    "Nigeria",
+    "Nicaragua",
+    "Netherlands",
+    "Norway",
+    "Nepal",
+    "Nauru",
+    "Niue",
+    "New Zealand",
+    "Oman",
+    "Panama",
+    "Peru",
+    "French Polynesia",
+    "Papua New Guinea",
+    "Philippines",
+    "Pakistan",
+    "Poland",
+    "Saint Pierre and Miquelon",
+    "Pitcairn",
+    "Puerto Rico",
+    "Palestine",
+    "Portugal",
+    "Palau",
+    "Paraguay",
+    "Qatar",
+    "Réunion",
+    "Romania",
+    "Serbia",
+    "Russian Federation",
+    "Rwanda",
+    "Saudi Arabia",
+    "Solomon Islands",
+    "Seychelles",
+    "Sudan",
+    "Sweden",
+    "Singapore",
+    "Saint Helena, Ascension and Tristan da Cunha",
+    "Slovenia",
+    "Svalbard and Jan Mayen Islands",
+    "Slovakia",
+    "Sierra Leone",
+    "San Marino",
+    "Senegal",
+    "Somalia",
+    "Suriname",
+    "South Sudan",
+    "Sao Tome and Principe",
+    "El Salvador",
+    "Sint Maarten (Dutch part)",
+    "Syrian Arab Republic",
+    "Kingdom of Eswatini",
+    "Turks and Caicos Islands",
+    "Chad",
+    "French Southern Territories",
+    "Togo",
+    "Thailand",
+    "Tajikistan",
+    "Tokelau",
+    "Timor-Leste",
+    "Turkmenistan",
+    "Tunisia",
+    "Tonga",
+    "Republic of Türkiye",
+    "Trinidad and Tobago",
+    "Tuvalu",
+    "Taiwan (Republic of China)",
+    "Tanzania, United Republic of",
+    "Ukraine",
+    "Uganda",
+    "US Minor Outlying Islands",
+    "United States",
+    "Uruguay",
+    "Uzbekistan",
+    "Holy See (Vatican City State)",
+    "Saint Vincent and the Grenadines",
+    "Venezuela, Bolivarian Republic of",
+    "Virgin Islands, British",
+    "Virgin Islands, U.S.",
+    "Vietnam",
+    "Vanuatu",
+    "Wallis and Futuna Islands",
+    "Samoa",
+    "Kosovo",
+    "Yemen",
+    "Mayotte",
+    "South Africa",
+    "Zambia",
+    "Zimbabwe"
+];
+
 const ALL_COUNTRIES = [
     "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina",
     "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados",
@@ -282,7 +536,7 @@ const ALL_COUNTRIES = [
     "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom",
     "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam",
     "Yemen", "Zambia", "Zimbabwe"
-]
+];
 const ALL_TERRITORIES = [
     "Aland Islands", "American Samoa", "Anguilla", "Aruba", "Bermuda", "British Virgin Islands",
     "Caribbean Netherlands", "Cayman Islands", "Christmas Island", "Cocos (Keeling) Islands",
@@ -295,7 +549,7 @@ const ALL_TERRITORIES = [
     "Svalbard and Jan Mayen", "Tokelau", "Turks and Caicos Islands",
     "United States Minor Outlying Islands", "Wallis and Futuna", "Western Sahara",
     "U.S. Virgin Islands"
-]
+];
 
 
 const COUNTRIES_IN_AFRICA = [
@@ -307,7 +561,7 @@ const COUNTRIES_IN_AFRICA = [
             "Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe", "Senegal", "Seychelles",
             "Sierra Leone", "Somalia", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo",
             "Tunisia", "Uganda", "Zambia", "Zimbabwe"
-        ]
+];
 const COUNTRIES_IN_ASIA = [
             "Afghanistan", "Armenia", "Azerbaijan", "Bahrain", "Bangladesh", "Bhutan", "Brunei", "Cambodia",
             "China", "Georgia", "India", "Indonesia", "Iran", "Iraq", "Israel", "Japan", "Jordan",
@@ -316,7 +570,7 @@ const COUNTRIES_IN_ASIA = [
             "Qatar", "Saudi Arabia", "Singapore", "South Korea", "Sri Lanka", "Syria", "Tajikistan",
             "Thailand", "Timor-Leste", "Turkey", "Turkmenistan", "United Arab Emirates", "Uzbekistan",
             "Vietnam", "Yemen"
-        ]
+];
 const COUNTRIES_IN_EUROPE = [
             "Albania", "Andorra", "Austria", "Belarus", "Belgium", "Bosnia and Herzegovina", "Bulgaria",
             "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany",
@@ -325,48 +579,48 @@ const COUNTRIES_IN_EUROPE = [
             "North Macedonia", "Norway", "Poland", "Portugal", "Romania", "Russia", "San Marino",
             "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "Ukraine",
             "United Kingdom", "Vatican City"
-        ]
+];
 const COUNTRIES_IN_NORTH_AMERICA = [
             "Antigua and Barbuda", "Bahamas", "Barbados", "Belize", "Canada", "Costa Rica", "Cuba",
             "Dominica", "Dominican Republic", "El Salvador", "Grenada", "Guatemala", "Haiti", "Honduras",
             "Jamaica", "Mexico", "Nicaragua", "Panama", "Saint Kitts and Nevis", "Saint Lucia",
             "Saint Vincent and the Grenadines", "Trinidad and Tobago", "United States"
-        ]
+];
 const COUNTRIES_IN_SOUTH_AMERICA = [
             "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay",
             "Peru", "Suriname", "Uruguay", "Venezuela"
-        ]
+];
 const COUNTRIES_IN_OCEANIA = [
             "Australia", "Fiji", "Kiribati", "Marshall Islands", "Micronesia", "Nauru", "New Zealand",
             "Palau", "Papua New Guinea", "Samoa", "Solomon Islands", "Tonga", "Tuvalu", "Vanuatu"
-        ]
+];
 
         
 const TERRITORIES_IN_AFRICA = [
             "Mayotte", "Réunion", "Saint Helena, Ascension and Tristan da Cunha", "Western Sahara"
-        ]
+];
 const TERRITORIES_IN_ASIA = [
             "Hong Kong", "Macao"
-        ]
+];
 const TERRITORIES_IN_EUROPE = [
             "Aland Islands", "Faroe Islands", "Gibraltar", "Guernsey", "Isle of Man", "Jersey",
             "Svalbard and Jan Mayen"
-        ]
+];
 const TERRITORIES_IN_NORTH_AMERICA = [
             "Anguilla", "Aruba", "Bermuda", "British Virgin Islands", "Cayman Islands",
             "Caribbean Netherlands", "Curacao", "Greenland", "Guadeloupe", "Martinique",
             "Montserrat", "Puerto Rico", "Saint Barthelemy", "Saint Martin", "Sint Maarten",
             "Turks and Caicos Islands", "U.S. Virgin Islands"
-        ]
+];
 const TERRITORIES_IN_SOUTH_AMERICA = [
             "Falkland Islands", "French Guiana", "South Georgia and the South Sandwich Islands"
-        ]
+];
 const TERRITORIES_IN_OCEANIA = [
             "American Samoa", "Christmas Island", "Cocos (Keeling) Islands", "Cook Islands",
             "French Polynesia", "Guam", "Heard Island and McDonald Islands", "New Caledonia",
             "Niue", "Norfolk Island", "Northern Mariana Islands", "Pitcairn", "Tokelau",
             "United States Minor Outlying Islands", "Wallis and Futuna"
-        ]
+];
 
 
 const COUNTRIES_AND_TERRITORIES_IN_AFRICA = [
@@ -379,7 +633,7 @@ const COUNTRIES_AND_TERRITORIES_IN_AFRICA = [
         "Sierra Leone", "Somalia", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo",
         "Tunisia", "Uganda", "Zambia", "Zimbabwe",
         "Mayotte", "Réunion", "Saint Helena, Ascension and Tristan da Cunha", "Western Sahara"
-]
+];
 const COUNTRIES_AND_TERRITORIES_IN_ASIA = [
     "Afghanistan", "Armenia", "Azerbaijan", "Bahrain", "Bangladesh", "Bhutan", "Brunei", "Cambodia",
     "China", "Georgia", "India", "Indonesia", "Iran", "Iraq", "Israel", "Japan", "Jordan",
@@ -389,7 +643,7 @@ const COUNTRIES_AND_TERRITORIES_IN_ASIA = [
     "Thailand", "Timor-Leste", "Turkey", "Turkmenistan", "United Arab Emirates", "Uzbekistan",
     "Vietnam", "Yemen",
     "Hong Kong", "Macao"
-]
+];
 const COUNTRIES_AND_TERRITORIES_IN_EUROPE = [
     "Albania", "Andorra", "Austria", "Belarus", "Belgium", "Bosnia and Herzegovina", "Bulgaria",
     "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany",
@@ -400,7 +654,7 @@ const COUNTRIES_AND_TERRITORIES_IN_EUROPE = [
     "United Kingdom", "Vatican City",
     "Aland Islands", "Faroe Islands", "Gibraltar", "Guernsey", "Isle of Man", "Jersey",
     "Svalbard and Jan Mayen"
-]
+];
 const COUNTRIES_AND_TERRITORIES_IN_NORTH_AMERICA = [
     "Antigua and Barbuda", "Bahamas", "Barbados", "Belize", "Canada", "Costa Rica", "Cuba",
     "Dominica", "Dominican Republic", "El Salvador", "Grenada", "Guatemala", "Haiti", "Honduras",
@@ -410,12 +664,12 @@ const COUNTRIES_AND_TERRITORIES_IN_NORTH_AMERICA = [
     "Caribbean Netherlands", "Curacao", "Greenland", "Guadeloupe", "Martinique",
     "Montserrat", "Puerto Rico", "Saint Barthelemy", "Saint Martin", "Sint Maarten",
     "Turks and Caicos Islands", "U.S. Virgin Islands"
-]
+];
 const COUNTRIES_AND_TERRITORIES_IN_SOUTH_AMERICA = [
     "Argentina", "Bolivia", "Brazil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay",
     "Peru", "Suriname", "Uruguay", "Venezuela",
     "Falkland Islands", "French Guiana", "South Georgia and the South Sandwich Islands"
-]
+];
 const COUNTRIES_AND_TERRITORIES_IN_OCEANIA = [
     "Australia", "Fiji", "Kiribati", "Marshall Islands", "Micronesia", "Nauru", "New Zealand",
     "Palau", "Papua New Guinea", "Samoa", "Solomon Islands", "Tonga", "Tuvalu", "Vanuatu",
@@ -423,4 +677,4 @@ const COUNTRIES_AND_TERRITORIES_IN_OCEANIA = [
     "French Polynesia", "Guam", "Heard Island and McDonald Islands", "New Caledonia",
     "Niue", "Norfolk Island", "Northern Mariana Islands", "Pitcairn", "Tokelau",
     "United States Minor Outlying Islands", "Wallis and Futuna"
-]
+];
