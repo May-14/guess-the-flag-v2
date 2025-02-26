@@ -29,6 +29,7 @@ img {
 }
 
 body {
+    height: 100vh;
     background-color: rgb(16, 24, 40);
     display: flex;
     flex-direction: column;
@@ -49,4 +50,15 @@ body {
 
 #play {
     width: 50vw;
+}
+
+.footer {
+    margin-top: auto;
+    color: rgb(209, 213, 220);
+    margin-bottom: 1vh;
+}
+
+.footer a {
+    color: rgb(0, 150, 137);
+    text-decoration: none;
 }
