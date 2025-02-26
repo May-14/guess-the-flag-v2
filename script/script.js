@@ -1,0 +1,1 @@
+console.log(ALL_COUNTRIES_AND_TERRITORIES_ARRAY.length)
