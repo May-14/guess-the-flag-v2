@@ -1,0 +1,1 @@
+console.log(COUNTRIES_IN_ASIA);
