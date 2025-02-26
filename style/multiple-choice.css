@@ -1,3 +1,15 @@
 img[alt="home icon"] {
     width: 24px;
 }
+
+.options {
+    gap: 4vh;
+}
+
+.options p {
+    padding: 4vh;
+}
+
+body > img {
+    margin-bottom: 10vh;
+}

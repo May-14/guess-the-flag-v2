@@ -12,7 +12,7 @@ h1 {
     font-size: 50px;
 }
 
-img {
+body > img {
     height: 300px;
     margin: 4% 0;
     border-radius: 10px;
