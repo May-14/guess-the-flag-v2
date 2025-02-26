@@ -67,11 +67,6 @@ body {
     text-decoration: none;
 }
 
-.language img {
-    width: 30px;
-    height: 30px;
-}
-
 
 svg {
     width: 24px;
@@ -96,12 +91,8 @@ header {
     gap: 2vw;
 }
 
-.language {
-    display: flex;
-    align-items: center;
-}
 
-header > span, .language span {
+header > span, .language {
     font-size: 20px;
     color: rgb(209, 213, 220);
 }
