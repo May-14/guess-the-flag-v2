@@ -22,10 +22,16 @@ body > img {
     color: rgb(209, 213, 220);
     text-align: center;
     font-size: 20px;
+}
+
+.options div div {
     width: 24vw;
     height: 11vh;
     background-color: rgb(30, 41, 56);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -40,6 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    width: 50vw;
 }
 
 .first-row, .second-row {
@@ -50,6 +57,9 @@ body {
 
 #play {
     width: 50vw;
+    background-color: rgb(30, 41, 56);
+    border-radius: 10px;
+    padding: 2vh;
 }
 
 .options > a {
