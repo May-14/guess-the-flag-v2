@@ -5,6 +5,7 @@ const option1 = document.querySelector(".option-1")
 const option2 = document.querySelector(".option-2")
 const option3 = document.querySelector(".option-3")
 const option4 = document.querySelector(".option-4")
+const allOptions = document.querySelectorAll(".options p")
 
 
 function randomIntFromInterval(min, max) { // min and max included 
@@ -21,6 +22,23 @@ function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
 }
 
+function checkIfChoiceIsCorrect(string) {
+    if (string === currentList[indexOfCorrectChoice]) {
+        console.log("true")
+        return true;
+    } else {
+        console.log("false")
+        return false;
+    }
+}
+
+function checkIfChoiceIsCorrect(choice, correctChoice) {
+    if (choice === correctChoice) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 function playRound() {
@@ -39,7 +57,13 @@ function playRound() {
     option2.textContent = currentList[indexesOfAllChosenCountries[1]];
     option3.textContent = currentList[indexesOfAllChosenCountries[2]];
     option4.textContent = currentList[indexesOfAllChosenCountries[3]];
-
+    allOptions.forEach(option => {
+        option.addEventListener("click", () => {
+            checkIfChoiceIsCorrect(option.textContent, currentList[indexOfCorrectChoice])
+        })
+    })
 }
+
+
 
 playRound()
