@@ -6,6 +6,7 @@ const option2 = document.querySelector(".option-2")
 const option3 = document.querySelector(".option-3")
 const option4 = document.querySelector(".option-4")
 const allOptions = document.querySelectorAll(".options p")
+const h1 = document.querySelector("h1")
 
 
 function randomIntFromInterval(min, max) { // min and max included 
@@ -38,11 +39,13 @@ function checkIfChoiceIsCorrect(choice, correctChoice) {
     } else {
         return false;
     }
+    console.log(result)
 }
 
 
 function playRound() {
     let indexesOfAllChosenCountries = [];
+    let userChoiceIsCorrect = "";
     for (let i = 0; i < 4; i++) {
         let randomNumber = randomIntFromInterval(0, availableIndexesInList);
         indexesOfAllChosenCountries[i] = randomNumber;
@@ -59,7 +62,19 @@ function playRound() {
     option4.textContent = currentList[indexesOfAllChosenCountries[3]];
     allOptions.forEach(option => {
         option.addEventListener("click", () => {
-            checkIfChoiceIsCorrect(option.textContent, currentList[indexOfCorrectChoice])
+            userChoiceIsCorrect = checkIfChoiceIsCorrect(option.textContent, currentList[indexOfCorrectChoice]);
+            if (userChoiceIsCorrect === true) {
+                h1.textContent = "Correct!"
+                option.setAttribute("style", "border: 1px, solid, green")
+            } else {
+                h1.textContent = `Incorrect! That was the flag of ${currentList[indexOfCorrectChoice]}.`
+                option.setAttribute("style", "border: 1px, solid, red")
+                allOptions.forEach(option => {
+                    if (option.textContent === currentList[indexOfCorrectChoice]) {
+                        option.setAttribute("style", "border: 1px, solid, green")
+                    }
+                })
+            }
         })
     })
 }
