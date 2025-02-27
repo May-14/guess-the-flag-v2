@@ -5,7 +5,7 @@ const option1 = document.querySelector(".option-1")
 const option2 = document.querySelector(".option-2")
 const option3 = document.querySelector(".option-3")
 const option4 = document.querySelector(".option-4")
-const allOptions = document.querySelectorAll(".options p")
+const allOptions = document.querySelectorAll(".options div div")
 const h1 = document.querySelector("h1")
 let displayedScore = document.querySelector(".current-score");
 let displayedHighScore = document.querySelector(".high-score")
@@ -66,7 +66,8 @@ function playRound() {
     option4.textContent = currentList[indexesOfAllChosenCountries[3]];
     allOptions.forEach(option => {
         option.addEventListener("click", () => {
-            userChoiceIsCorrect = checkIfChoiceIsCorrect(option.textContent, currentList[indexOfCorrectChoice]);
+            optionText = option.querySelector("p");
+            userChoiceIsCorrect = checkIfChoiceIsCorrect(optionText.textContent, currentList[indexOfCorrectChoice]);
             if (userChoiceIsCorrect === true) {
                 h1.textContent = "Correct!"
                 option.setAttribute("style", "border: 1px, solid, green")
