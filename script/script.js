@@ -7,6 +7,8 @@ const option3 = document.querySelector(".option-3")
 const option4 = document.querySelector(".option-4")
 const allOptions = document.querySelectorAll(".options p")
 const h1 = document.querySelector("h1")
+let displayedScore = document.querySelector(".current-score");
+let displayedHighScore = document.querySelector(".high-score")
 let userScore = 0;
 let highScore = 0;
 
@@ -71,6 +73,8 @@ function playRound() {
                 userScore += 1;
                 if (userScore > highScore) {
                     highScore = userScore;
+                    displayedScore.setAttribute("style", "color: rgb(225, 197, 100);")
+                    displayedHighScore.textContent = `High score: ${userScore}`;
                 }
             } else {
                 h1.textContent = "Incorrect!"
@@ -78,10 +82,12 @@ function playRound() {
                 allOptions.forEach(option => {
                     if (option.textContent === currentList[indexOfCorrectChoice]) {
                         option.setAttribute("style", "border: 1px, solid, green")
+                        displayedScore.setAttribute("style", "color: rgb(0, 150, 137);")
                     }
                 })
                 userScore = 0;
             }
+            displayedScore.textContent = `Current score: ${userScore}`;
         })
     })
 }

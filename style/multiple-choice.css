@@ -10,6 +10,37 @@ img[alt="home icon"] {
     padding: 4vh;
 }
 
-body > img {
+
+.middle img {
+    height: 300px;
+    margin-top: 6vh;
+    border-radius: 10px;
     margin-bottom: 10vh;
+}
+
+.middle {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle ul {
+    color: white;
+    list-style: none;
+    line-height: 4vh;
+    font-size: 24px;
+}
+
+
+.middle ul, .empty {
+    width: 13vw;
+}
+
+.high-score {
+    color: rgb(225, 197, 100);
+}
+
+.current-score {
+    color: rgb(0, 150, 137);
 }
