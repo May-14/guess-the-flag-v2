@@ -68,7 +68,6 @@ const ALL_COUNTRIES_AND_TERRITORIES_OBJECT = {
     "ER": "Eritrea",
     "ES": "Spain",
     "ET": "Ethiopia",
-    "EU": "Europe",
     "FI": "Finland",
     "FJ": "Fiji",
     "FK": "Falkland Islands (Malvinas)",
