@@ -7,6 +7,8 @@ const option3 = document.querySelector(".option-3")
 const option4 = document.querySelector(".option-4")
 const allOptions = document.querySelectorAll(".options p")
 const h1 = document.querySelector("h1")
+let userScore = 0;
+let highScore = 0;
 
 
 function randomIntFromInterval(min, max) { // min and max included 
@@ -66,6 +68,10 @@ function playRound() {
             if (userChoiceIsCorrect === true) {
                 h1.textContent = "Correct!"
                 option.setAttribute("style", "border: 1px, solid, green")
+                userScore += 1;
+                if (userScore > highScore) {
+                    highScore = userScore;
+                }
             } else {
                 h1.textContent = `Incorrect! That was the flag of ${currentList[indexOfCorrectChoice]}.`
                 option.setAttribute("style", "border: 1px, solid, red")
@@ -74,6 +80,7 @@ function playRound() {
                         option.setAttribute("style", "border: 1px, solid, green")
                     }
                 })
+                userScore = 0;
             }
         })
     })
