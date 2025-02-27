@@ -1,6 +1,11 @@
 let currentList = ALL_COUNTRIES_AND_TERRITORIES_ARRAY;
 let availableIndexesInList = currentList.length - 1;
-let flag = document.querySelector(".flag-of-country")
+const flag = document.querySelector(".flag-of-country")
+const option1 = document.querySelector(".option-1")
+const option2 = document.querySelector(".option-2")
+const option3 = document.querySelector(".option-3")
+const option4 = document.querySelector(".option-4")
+
 
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -30,6 +35,11 @@ function playRound() {
         "./images/flag-country-svg/" + 
         getKeyByValue(ALL_COUNTRIES_AND_TERRITORIES_OBJECT, currentList[indexOfCorrectChoice]).toLowerCase() 
         + ".svg")
+    option1.textContent = currentList[indexesOfAllChosenCountries[0]];
+    option2.textContent = currentList[indexesOfAllChosenCountries[1]];
+    option3.textContent = currentList[indexesOfAllChosenCountries[2]];
+    option4.textContent = currentList[indexesOfAllChosenCountries[3]];
+
 }
 
 playRound()
