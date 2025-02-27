@@ -41,3 +41,24 @@ img[alt="home icon"] {
 .current-score {
     color: rgb(0, 150, 137);
 }
+
+.next {
+    color: white;
+    align-self: flex-end;
+    text-align: center;
+    padding: 1vh;
+    background-color: rgb(30, 41, 56);
+    border-radius: 15px;
+    border: 1px solid rgb(0, 150, 137);
+    visibility: hidden;
+}
+
+.bottom {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom > .empty, .next {
+    width: 7vw;
+}
