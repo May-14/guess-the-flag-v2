@@ -73,7 +73,7 @@ function playRound() {
                     highScore = userScore;
                 }
             } else {
-                h1.textContent = `Incorrect! That was the flag of ${currentList[indexOfCorrectChoice]}.`
+                h1.textContent = "Incorrect!"
                 option.setAttribute("style", "border: 1px, solid, red")
                 allOptions.forEach(option => {
                     if (option.textContent === currentList[indexOfCorrectChoice]) {
