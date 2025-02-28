@@ -89,7 +89,8 @@ function playRound() {
                     h1.textContent = "Incorrect!"
                     option.setAttribute("style", "border: 1px, solid, red")
                     allOptions.forEach(option => {
-                        if (option.textContent === currentList[indexOfCorrectChoice]) {
+                        optionText = option.querySelector("p");
+                        if (optionText.textContent === currentList[indexOfCorrectChoice]) {
                             option.setAttribute("style", "border: 1px, solid, green")
                             displayedScore.setAttribute("style", "color: rgb(0, 150, 137);")
                         }
